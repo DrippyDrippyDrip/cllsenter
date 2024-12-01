@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$ICC - INDIAN CALL CENTER</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>$ICC - INDIAN CALL CENTER</h1>
+        <div class="subtitle">SECURE COMMUNICATION PLATFORM v2.4.7</div>
+    </div>
+    
+    <div class="container">
+        <div class="sidebar">
+            <div class="agent-list">
+                <button class="agent-btn active" data-agent="rajesh">
+                    <div class="agent-avatar">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=felix&style=circle" alt="Rajesh">
+                    </div>
+                    <div class="agent-info">
+                        <h2>Rajesh Kumar</h2>
+                        <div class="location">Mumbai Call Center</div>
+                    </div>
+                </button>
+                <button class="agent-btn" data-agent="priya">
+                    <div class="agent-avatar">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=priya&style=circle&top=longHair" alt="Priya">
+                    </div>
+                    <div class="agent-info">
+                        <h2>Priya Sharma</h2>
+                        <div class="location">Delhi Call Center</div>
+                    </div>
+                </button>
+            </div>
+            
+            <div id="rajesh-script" class="script">
+                <h3>Approved Scripts</h3>
+                <p>"Hello dear sir/madam, this is Rajesh Kumar from Microsoft Technical Support. We have detected dangerous viruses and hackers on your computer..."</p>
+            </div>
+            <div id="priya-script" class="script hidden">
+                <h3>Approved Scripts</h3>
+                <p>"Hello dear sir/madam, this is Priya Sharma from Amazon Prime Security. We have detected unauthorized purchases on your account..."</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div id="conversation" class="conversation">
+                <!-- Messages will appear here -->
+            </div>
+            
+            <div class="controls">
+                <button id="startCall">Initialize Connection</button>
+                <button id="endCall" disabled>Terminate Connection</button>
+            </div>
+            
+            <div class="status-bar">
+                <div class="status-indicator">
+                    <div class="status-dot"></div>
+                    <span>SECURE CONNECTION ACTIVE</span>
+                </div>
+                <span>NODE: BLR-023</span>
+                <span>UPTIME: 00:00:00</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="../lib/client.js" type="module"></script>
+    <script src="app.js" type="module"></script>
+</body>
+</html> 
